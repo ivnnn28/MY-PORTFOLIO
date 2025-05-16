@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title> Home Page </title>
+    <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+    <div class="about-container">
+        <img src="img/again.jpg" alt="Your Photo" class="profile-pic" />
+    </div>
+
+    <div class="banner">
+        <div class="navbar">
+            <img src="./img/logo.jpg" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="folder.html">Folder</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Who Am I?</h1>
+            <P>I am Cris Ivan Caluag, they call me "iban" 20, turning 21yrs old this friday yes i am officially legal
+                age. I am the second of our siblings and the only boy. I am interested in exploring around the world. I
+                also have a service which is a Ferrari HAHAHAHA joke lang its just a tricycle. My hobby is playing
+                basketball, online games like ml , dota and I love cooking yes, cooking therapy. We also have a pet, a
+                sitzu dog named Coco.</p>
+        </div>
+    </div>
+
+    <body>
+        <div class="album">
+            <img src="./img/me.jpeg" alt="Photo 1" onclick="openLightbox(this.src)">
+            <img src="./img/vango.jpg " alt="Photo 2" onclick="openLightbox(this.src)">
+            <img src="./img/fam.jpg" alt="Photo 3" onclick="openLightbox(this.src)">
+            <img src="./img/again.jpg" alt="Photo 4" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Large View">
+        </div>
+
+        <script>
+            function openLightbox(src) {
+                document.getElementById('lightbox').style.display = 'flex';
+                document.getElementById('lightbox-img').src = src;
+            }
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+            }
+        </script>
+    </body>
+
+
+</body>
+
+</html>
